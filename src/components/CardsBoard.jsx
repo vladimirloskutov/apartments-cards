@@ -1,10 +1,25 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Card from './Card';
 
-const CardsBoard = () => {
-  const cardsBoard = [1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => (
-    <div className="col-4">
-      <Card />
+const mapStateToProps = (state) => ({
+  cards: state,
+});
+
+const CardsBoard = (props) => {
+  const { cards } = props;
+  const cardsBoard = cards.map(({
+    id, title, description, price, likesCount, isLiked,
+  }) => (
+    <div key={id} className="col-4">
+      <Card
+        id={id}
+        title={title}
+        description={description}
+        price={price}
+        likesCount={likesCount}
+        isLiked={isLiked}
+      />
     </div>
   ));
 
@@ -15,4 +30,4 @@ const CardsBoard = () => {
   );
 };
 
-export default CardsBoard;
+export default connect(mapStateToProps)(CardsBoard);
