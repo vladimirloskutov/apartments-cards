@@ -2,7 +2,7 @@ const reducer = (state = [], action) => {
   switch (action.type) {
     case 'CLICK_LIKE': {
       const { id } = action.payload;
-      const newState = [...state].map((card) => {
+      const newState = state.map((card) => {
         if (card.id === id) {
           if (card.status) {
             const status = false;
