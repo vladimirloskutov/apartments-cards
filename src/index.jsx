@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
 import App from './components/App';
 import reducer from './reducers';
 
@@ -32,6 +33,8 @@ const entities = [
     id: 9, imageUrl: 'url', title: 'title9', description: 'description9', price: 9000000, likesCount: 10, isLiked: true,
   },
 ];
+
+const store = createStore(reducer, entities);
 
 ReactDOM.render(
   <App />,
