@@ -26,7 +26,7 @@ const Card = (props) => {
   };
 
   return (
-    <div className="card mb-5">
+    <div className="card h-100">
       <img src={imageUrl} className="card-img-top" alt="img cap" />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>

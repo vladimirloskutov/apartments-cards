@@ -11,7 +11,7 @@ const CardsBoard = (props) => {
   const cardsBoard = cards.map(({
     id, imageUrl, title, description, price, likesCount, isLiked,
   }) => (
-    <div key={id} className="col-4">
+    <div key={id} className="col-sm-12 col-md-6 col-lg-4 mb-4">
       <Card
         id={id}
         imageUrl={imageUrl}
