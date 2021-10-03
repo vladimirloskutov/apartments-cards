@@ -4,14 +4,14 @@ const reducer = (state = [], action) => {
       const { id } = action.payload;
       const newState = state.map((card) => {
         if (card.id === id) {
-          if (card.status) {
-            const status = false;
+          if (card.isLiked) {
+            const isLiked = false;
             const likesCount = card.likesCount - 1;
-            return { ...card, status, likesCount };
+            return { ...card, isLiked, likesCount };
           }
-          const status = true;
+          const isLiked = true;
           const likesCount = card.likesCount + 1;
-          return { ...card, status, likesCount };
+          return { ...card, isLiked, likesCount };
         }
         return card;
       });

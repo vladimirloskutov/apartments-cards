@@ -7,10 +7,10 @@ import reducer from './reducers';
 
 const entities = [
   {
-    id: 1, imageUrl: 'url', title: 'title1', description: 'description1', price: 1000000, likesCount: 6, isLiked: true,
+    id: 1, imageUrl: 'url', title: 'title1', description: 'description1', price: 1000000, likesCount: 6, isLiked: false,
   },
   {
-    id: 2, imageUrl: 'url', title: 'title2', description: 'description2', price: 2000000, likesCount: 2, isLiked: false,
+    id: 2, imageUrl: 'url', title: 'title2', description: 'description2', price: 2000000, likesCount: 2, isLiked: true,
   },
   {
     id: 3, imageUrl: 'url', title: 'title3', description: 'description3', price: 3000000, likesCount: 0, isLiked: false,
