@@ -2,20 +2,15 @@ const reducer = (state = [], action) => {
   switch (action.type) {
     case 'CLICK_LIKE': {
       const { id } = action.payload;
-      const newState = state.map((card) => {
+      return state.map((card) => {
         if (card.id === id) {
           if (card.isLiked) {
-            const isLiked = false;
-            const likesCount = card.likesCount - 1;
-            return { ...card, isLiked, likesCount };
+            return { ...card, isLiked: false, likesCount: card.likesCount - 1 };
           }
-          const isLiked = true;
-          const likesCount = card.likesCount + 1;
-          return { ...card, isLiked, likesCount };
+          return { ...card, isLiked: true, likesCount: card.likesCount + 1 };
         }
         return card;
       });
-      return newState;
     }
     default: {
       return state;
