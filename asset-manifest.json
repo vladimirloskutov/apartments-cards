@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/apartments-cards/static/js/main.b2232024.chunk.js",
+    "main.js.map": "/apartments-cards/static/js/main.b2232024.chunk.js.map",
+    "runtime-main.js": "/apartments-cards/static/js/runtime-main.83e3130e.js",
+    "runtime-main.js.map": "/apartments-cards/static/js/runtime-main.83e3130e.js.map",
+    "static/js/2.14db6609.chunk.js": "/apartments-cards/static/js/2.14db6609.chunk.js",
+    "static/js/2.14db6609.chunk.js.map": "/apartments-cards/static/js/2.14db6609.chunk.js.map",
+    "index.html": "/apartments-cards/index.html",
+    "static/js/2.14db6609.chunk.js.LICENSE.txt": "/apartments-cards/static/js/2.14db6609.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83e3130e.js",
+    "static/js/2.14db6609.chunk.js",
+    "static/js/main.b2232024.chunk.js"
+  ]
+}
