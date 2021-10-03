@@ -9,11 +9,12 @@ const mapStateToProps = (state) => ({
 const CardsBoard = (props) => {
   const { cards } = props;
   const cardsBoard = cards.map(({
-    id, title, description, price, likesCount, isLiked,
+    id, imageUrl, title, description, price, likesCount, isLiked,
   }) => (
     <div key={id} className="col-4">
       <Card
         id={id}
+        imageUrl={imageUrl}
         title={title}
         description={description}
         price={price}
